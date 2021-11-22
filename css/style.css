@@ -1,5 +1,5 @@
 /* HEADER */
-#header {position:fixed; left:0; top:0; width:80%; z-index:99; transition:all 0.5s;}
+#header {position:fixed; left:0; top:0; width:100%; z-index:99; transition:all 0.5s;}
 #header .center {display:flex; justify-content:space-between; align-items:center;}
 #header #logo {font-size:24px; font-weight:400; transition:all 0.5s; line-height:70px;}
 #header #logo:hover {transform:scale(1.1);}
