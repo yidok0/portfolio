@@ -1,0 +1,11 @@
+/* css 리셋 */
+* {margin: 0; padding: 0; box-sizing:border-box; font-family: 'Noto Sans KR', sans-serif;}
+body {line-height: 1;}
+ul,ol,li {list-style: none;}
+img,video {vertical-align: top;}
+a {text-decoration: none;}
+table {border-collapse: collapse;}
+.clear_fix:after {content:""; display:block; clear:both;}
+table {border-collapse:collapse;}
+input,textarea {outline:0; font-family: 'Zen Antique Soft', serif;}
+.elli {white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
