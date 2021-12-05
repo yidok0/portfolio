@@ -2,7 +2,7 @@ $(function(){
     //로딩화면
     setTimeout(function() {
         $(".loading").fadeOut();
-    }, 500);
+    }, 2500);
 
     //헤더 클릭시 해당 페이지로 이동
     $(".home").click(function(e){
