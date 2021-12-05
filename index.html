@@ -17,7 +17,7 @@
     <!-- 웹폰트아이콘 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- 플러그인 css -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/aos.css">
     <!-- css -->
@@ -26,9 +26,8 @@
     <link rel="stylesheet" href="css/loader.css">
     <!-- script -->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script defer src="js/custom.js"></script>
 </head>
 <body>
@@ -142,50 +141,60 @@
                         <P>03</P>
                         <span>PORTFOLIO</span>
                     </div>
-                    <div class="content">
-                        <div class="list">
-                            <div class="img"></div>
-                            <div class="text">
-                                <h3>DAEHONG <span>대홍기획</span></h3>
-                                <p>작업부문_ 기존 사이트 리뉴얼</p>
-                                <p>작업기간_ 약 1주</p>
-                                <p>구현범위_ 메인페이지, 반응형</p>
-                                <p>참여도_ 100%</p>
-                                <a href="http://yidok0.dothome.co.kr/portfolio/daehong">VISIT</a>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="text">
-                                <h3>TVING MALL <span>티빙몰</span></h3>
-                                <p>작업부문_ 기존 사이트 리뉴얼</p>
-                                <p>작업기간_ 약 2주</p>
-                                <p>구현범위_ 메인페이지, 서브페이지(회원가입, 로그인, 리뷰페이지)</p>
-                                <p>참여도_ 100%</p>
-                                <a href="http://yidok0.dothome.co.kr/portfolio/tvingmall">VISIT</a>
-                            </div>
-                            <div class="img"></div>
-                        </div>
-                        <div class="list">
-                            <div class="img"></div>
-                            <div class="text">
-                                <h3>CO&DE <span>코앤드</span></h3>
-                                <p>작업부문_ 기존 사이트 리뉴얼</p>
-                                <p>작업기간_ 약 1주</p>
-                                <p>구현범위_ 메인페이지, 반응형</p>
-                                <p>참여도_ 100%</p>
-                                <a href="http://yidok0.dothome.co.kr/portfolio/conde/">VISIT</a>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="text">
-                                <h3>HARRY POTTER <span>해리포터</span></h3>
-                                <p>작업부문_ 창작 사이트</p>
-                                <p>작업기간_ 약 1주</p>
-                                <p>구현범위_ 메인페이지, 반응형</p>
-                                <p>참여도_ 100%</p>
-                                <a href="http://yidok0.dothome.co.kr/portfolio/harrypotter/">VISIT</a>
-                            </div>
-                            <div class="img"></div>
+                    <div class="content swiper">
+                        <div class="swiper-wrapper">
+                            <a class="list swiper-slide"
+                            href="http://yidok0.dothome.co.kr/portfolio/tvingmall" target="_blank">
+                                <div class="text">
+                                    <h3>TVING MALL <span>티빙몰</span></h3>
+                                    <p>작업부문_ 기존 사이트 벤치마킹</p>
+                                    <p>작업기간_ 약 3주</p>
+                                    <p>구현범위_ 메인페이지, 반응형, 서브페이지(회원가입, 로그인, 리뷰페이지)</p>
+                                    <p>참여도_ 100%</p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/port_tvingmall.png">
+                                </div>
+                            </a>
+                            <a class="list swiper-slide"
+                            href="http://yidok0.dothome.co.kr/portfolio/daehong" target="_blank">
+                                <div class="img">
+                                    <img src="img/port_daehong.png">
+                                </div>
+                                <div class="text">
+                                    <h3>DAEHONG <span>대홍기획</span></h3>
+                                    <p>작업부문_ 기존 사이트 벤치마킹</p>
+                                    <p>작업기간_ 약 1주</p>
+                                    <p>구현범위_ 메인페이지, 반응형</p>
+                                    <p>참여도_ 100%</p>
+                                </div>
+                            </a>
+                            <a class="list swiper-slide"
+                            href="http://yidok0.dothome.co.kr/portfolio/conde/" target="_blank" >
+                                <div class="img">
+                                    <img src="img/port_conde.png">
+                                </div>
+                                <div class="text">
+                                    <h3>CO&DE <span>코앤드</span></h3>
+                                    <p>작업부문_ 기존 사이트 벤치마킹</p>
+                                    <p>작업기간_ 약 1주</p>
+                                    <p>구현범위_ 메인페이지, 반응형</p>
+                                    <p>참여도_ 100%</p>
+                                </div>
+                            </a>
+                            <a class="list swiper-slide"
+                            href="http://yidok0.dothome.co.kr/portfolio/harrypotter/" target="_blank" >
+                                <div class="text">
+                                    <h3>HARRY POTTER <span>해리포터</span></h3>
+                                    <p>작업부문_ 창작</p>
+                                    <p>작업기간_ 약 1주</p>
+                                    <p>구현범위_ 메인페이지, 반응형</p>
+                                    <p>참여도_ 100%</p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/port_harrypotter.png">
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

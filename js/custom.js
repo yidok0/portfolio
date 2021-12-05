@@ -2,27 +2,7 @@ $(function(){
     //로딩화면
     setTimeout(function() {
         $(".loading").fadeOut();
-    }, 4000);
-
-
-    // isotope 플러그인 시작 세팅
-    $('.tabList').isotope({
-        // options
-        itemSelector: '.all',
-        layoutMode: 'masonry',
-
-    });
-    // 버튼 클릭시 정렬기능 수행
-    $(".tabBtn li").click(function(e){
-        e.preventDefault(); //a태그 기본기능 중지
-
-        let sorting = $(this).attr("data-filter");
-
-        $(".tabList").isotope({ filter: sorting});
-
-        $(".tabBtn li").removeClass("on");
-        $(this).addClass("on");
-    });
+    }, 500);
 
     //헤더 클릭시 해당 페이지로 이동
     $(".home").click(function(e){
@@ -46,40 +26,19 @@ $(function(){
         
         $("html, body").stop().animate({"scrollTop":movePoint},1000);
     });
-
-    //풀페이지
-    $('#fullpage').fullpage({
-        //options here
-        menu: '#gnb',
-        scrollBar: true,
-        autoScrolling:true,
-        scrollHorizontally: true,
-        navigation: true,
-	    navigationPosition: 'right',
-    });
-
 });
+
 // AOS 추가
 AOS.init();
-
-// SWIPER 스와이퍼
+   
+//포트폴리오 슬라이드
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    speed:1000,
+    effect: 'cube',
+    loop:true,
     autoplay: {
-        delay: 4000,
-    },    
-    // If we need pagination
-    pagination: {
-    el: '.swiper-pagination',
-    },        
-    // Navigation arrows
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+      delay: 5000,
     },
+    speed : 1000,
 });
 
 // 스크롤하면 헤더 디자인 변경
